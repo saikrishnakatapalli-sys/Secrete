@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>April Fool!</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: white;
+        /* Animated colorful gradient */
+        background: linear-gradient(45deg, #ff0080, #ff8c00, #40e0d0, #8a2be2);
+        background-size: 400% 400%;
+        animation: gradientMove 8s ease infinite;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-shadow: 3px 3px 10px black;
+    }
+
+    p {
+        font-size: 1.8rem;
+        margin-top: -20px;
+        text-shadow: 2px 2px 8px black;
+    }
+
+    .box {
+        padding: 30px 40px;
+        background: rgba(0,0,0,0.4);
+        border-radius: 20px;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        animation: pop 1.5s ease-out;
+    }
+
+    @keyframes pop {
+        0% { transform: scale(0.5); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+</style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>🎉 Happy April Fool’s Day! 😄</h1>
+        <p>You just got fooled! 🤣</p>
+    </div>
+</body>
+</html>
